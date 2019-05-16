@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList should render component 1`] = `
+<Fragment>
+  <nav
+    style={
+      Object {
+        "marginTop": "60px",
+      }
+    }
+  >
+    <ol
+      className="breadcrumb"
+    >
+      <li
+        className="breadcrumb-item active"
+        onClick={[Function]}
+      >
+        All
+      </li>
+      <li
+        className="breadcrumb-item "
+        onClick={[Function]}
+      >
+        Completed
+      </li>
+      <li
+        className="breadcrumb-item "
+        onClick={[Function]}
+      >
+        Active
+      </li>
+    </ol>
+  </nav>
+  <table
+    className="table table-hover table-dark"
+    style={
+      Object {
+        "marginTop": "60px",
+      }
+    }
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          Todos
+        </th>
+        <th
+          scope="col"
+        >
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        key="0"
+      >
+        <td
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          delectus aut autem
+           
+        </td>
+        <td>
+          <span
+            className="fas fa-minus-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+                "marginRight": "20px",
+              }
+            }
+          />
+          <span
+            className="fas fa-check-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        key="1"
+      >
+        <td
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          quis ut nam facilis et officia qui
+           
+        </td>
+        <td>
+          <span
+            className="fas fa-minus-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+                "marginRight": "20px",
+              }
+            }
+          />
+          <span
+            className="fas fa-check-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        key="2"
+      >
+        <td
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          fugiat veniam minus
+           
+        </td>
+        <td>
+          <span
+            className="fas fa-minus-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+                "marginRight": "20px",
+              }
+            }
+          />
+          <span
+            className="fas fa-check-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        key="3"
+      >
+        <td
+          style={
+            Object {
+              "textDecoration": "line-through",
+            }
+          }
+        >
+          et porro tempora
+           
+          (completed)
+        </td>
+        <td>
+          <span
+            className="fas fa-minus-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+                "marginRight": "20px",
+              }
+            }
+          />
+          <span
+            className="fas fa-check-circle"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "20pt",
+              }
+            }
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</Fragment>
+`;

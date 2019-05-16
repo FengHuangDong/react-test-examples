@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoInput Components should render component 1`] = `
+<div
+  className="form-group row"
+>
+  <div
+    className="col-sm-10"
+  >
+    <form
+      className="form-inline"
+      onSubmit={[MockFunction]}
+    >
+      <Field
+        className="form-control"
+        component="input"
+        name="title"
+        placeholder="add todo here"
+        type="text"
+      />
+      <button
+        className="btn btn-success"
+        style={
+          Object {
+            "marginLeft": "10px",
+          }
+        }
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+`;
