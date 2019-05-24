@@ -22,14 +22,5 @@ module.exports = {
   "snapshotSerializers": [
     "enzyme-to-json/serializer"
   ],
-  "reporters": [
-    "default",
-    [
-      "./node_modules/jest-html-reporter",
-      {
-        "useCssFile": true
-      }
-    ]
-  ],
   "setupFilesAfterEnv": [convertToPath("./setupTests.js")],
 }

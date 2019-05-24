@@ -1,8 +1,8 @@
 import React from 'react';
-import {TodoList, getVisibleTodos} from "../../../src/components/TodoList"
+import TodoListContainer,{TodoList, getVisibleTodos} from "../../../src/components/TodoList"
 import {shallow} from 'enzyme'
 import toJson from "enzyme-to-json"
-import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from "../../../src/actions/actionsTypes";
+import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE, SET_VISIBILITY_FILTER } from "../../../src/actions/actionsTypes";
 
 const mockTodos = [
   {
@@ -30,6 +30,30 @@ const mockTodos = [
     "completed": true
   }
 ]
+
+import configureStore from 'redux-mock-store'
+describe('TodoListContainer integration redux', () => {
+  const mockStore = configureStore()
+  const initialState = {
+    todos:[],
+    visibilityFilter:SHOW_ALL
+  }
+  let store,wrapper
+  beforeEach(()=>{
+    store = mockStore(initialState)
+    wrapper = shallow(<TodoListContainer store={store} />)  
+  })
+  it('should remverFromList to be call when click icon',() => {
+    const todoList = wrapper.find(TodoList)
+    todoList.props().actions.setVisibilityFilter(SHOW_COMPLETED)
+    const expectedAction = [{
+      type:SET_VISIBILITY_FILTER,
+      payload:SHOW_COMPLETED
+    }]
+    const actions = store.getActions()
+    expect(actions).toEqual(expectedAction)
+  })
+})
 
 describe('TodoList', () => {
   let mockProps, wrapper
